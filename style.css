@@ -1,0 +1,84 @@
+body{
+    background: linear-gradient(95deg,#A16BFE,#BC3D2F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.weather-container{
+    background: linear-gradient(95deg,#D4FC78,#99E5A2);
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border-color: azure;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.weather-container h1 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.weather-container p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.result{
+    background: linear-gradient(95deg,#8debff,#6cacff);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px 30px;
+}
+
+input#location {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #BC3D2F;    
+  border-radius: 8px;
+  outline: none;                
+  transition: border-color 0.3s ease;
+}
+
+input#location:focus {
+  border-color: #A16BFE;        
+  box-shadow: 0 0 8px rgba(161, 107, 254, 0.5);
+}
+
+input#location::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+button#getweather, button#button {
+  background: linear-gradient(95deg, #A16BFE, #BC3D2F);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(188, 61, 47, 0.4);
+  
+  margin-top: 15px; 
+
+
+}
+
+button#getweather:hover, button#button:hover {
+  background: linear-gradient(95deg, #BC3D2F, #A16BFE);
+  box-shadow: 0 6px 20px rgba(161, 107, 254, 0.6);
+}
+
+button#getweather:focus, button#button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(161, 107, 254, 0.8);
+}
